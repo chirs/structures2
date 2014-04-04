@@ -1,7 +1,24 @@
 
+# * sitecast concrete (cast-in-place, in situ)
+# * precast concrete
+# * masonry - CMU or poured loose
+
+# Strength of concrete: f'c
+# Stiffness of concrete: modulus of Elasticity, Ec
 
 # n = Es/Ec -> modulus of Elasticity of steel/concrete
 #   = 29000ksi.
+
+def modulus_of_elasticity(strength, weight=145):
+    # Since unit weight for ordinary stone-aggregate concrete is 145pcf,
+    # average concrete modulus = 57000 * sqrt(strength)
+    # in MPa, the constant is 4730
+    return weight ** 1.5 * (33 * math.sqrt(strength))
+
+# cover
+# code minimum for cover is 3/4" for walls and slabs,
+# 1.5" for beams and columns
+
 
 # phi design strength of individual concrete members
 # .90 for flexure, tension, combination
@@ -11,14 +28,15 @@
 # .65 for compressive bearing
 # .55 for flexure in plan
 
-def magnitude_of_elasticity(strength, weight):
-    # Since unit weight for ordinary stone-aggregate concrete is 145pcf,
-    # average concrete modulus = 57000 * sqrt(strength)
-    # in MPa, the constant is 4730
-    return weight ** 1.5 * (33 * math.sqrt(strength))
 
 def standard_factor(dl, ll):
     return 1.2 * dl + 1.6 * ll
+
+def percentage_of_reinforcement(cross_sectional_area, width, effective_depth):
+    return cross_sectional_area / (width * effective_depth)
+
+def cross_sectional_area(percentage_of_reinforcement, width, effective_depth):
+    return percentage_of_reinforcement * width * effective_depth
 
 
 # b = width of concrete compression zone

@@ -29,8 +29,6 @@ def modulus_of_elasticity(strength, weight=145):
 # .55 for flexure in plan
 
 
-def standard_factor(dl, ll):
-    return 1.2 * dl + 1.6 * ll
 
 def percentage_of_reinforcement(cross_sectional_area, width, effective_depth):
     return cross_sectional_area / (width * effective_depth)
