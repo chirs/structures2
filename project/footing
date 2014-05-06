@@ -40,3 +40,44 @@ longitudinal reinforcement = .0015x (.15%) gross concrete area. (footing cross-s
 
 assuming an under-reinforced section (a/d <= .2)
 
+
+
+
+
+DETERMINING COLUMN FOOTINGS:
+
+* quick footing size estimate -> load / max soil pressure
+  (does not include footing weight, so is an underestimate.)
+
+* for a footing of significant size (eg 125ft^2) -> thickness is just a guess. Aim for something reasonable (30in?)
+ - footing weight = inches thick * (150/12)
+
+* Now adjust soil pressure for footing weight and recompute load / adj. soil pressure; use that number to get footing dimensions.
+* Now, re-do footing dimensions using round numbers. Recalculate design soil pressure again.
+
+
+Pu = factored soil pressure = 1.2* DL + 1.6 * LL (in kips)
+pd = design soil pressure = Pu / footing area (in psf)
+
+balanced moment capacity = Rbd^2 -> bending stress should not be critical.
+
+
+shear will be critical, either beam-type or punching.
+
+Designers prefer to use largest bar possible in fewest number (simplify bar laying.)
+
+Consider using thicker footing with less steel.
+
+Minimum amount of steel: .0015Ag
+
+
+Pedestals: 
+
+pedestal is a compression member where height <= 3*width
+
+
+
+
+
+
+
