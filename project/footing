@@ -1,0 +1,42 @@
+
+
+cost effective -> reduce steel reinforcement to a minimum.
+
+keep footing <= 5x wall thickness.
+
+bending of footer, shear of footer.
+
+maximum bar spacing: 18in
+minimum bar spacing: 6in.
+smaller bars are preferable.
+
+
+
+common footings:
+* wall footing
+* column footing
+
+* foundation walls
+* pedestals  
+
+
+
+At sufficient wall foundation width, minimum thickness is determined also.
+Otherwise, minimum thickness is 8in non-reinforced, 10in reinforced.
+
+
+1. assume footing thickness.
+2. design for total load.
+3. verify structural adequacy.
+4. modify final width.
+
+
+
+Transverse reinforcement - probably don't need it.
+
+
+longitudinal reinforcement = .0015x (.15%) gross concrete area. (footing cross-section area)    
+
+
+assuming an under-reinforced section (a/d <= .2)
+
