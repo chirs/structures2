@@ -1,0 +1,54 @@
+
+
+The most heavily loaded column: 16x16 = 256 square feet.
+
+30psf: snow load
+50psf: dead load
+100psf: live load
+
+on columns:
+
+100+100+50+50+30 = 230psf * 256 = 58800 = 58.8k
+
+dl = 130 * 256 = 33280
+ll = 100 * 256 = 25600
+
+column size: 10in. square
+
+f'c = concrete design strength: 3000psi
+yield stress of steel: 40
+
+footing guess: sqrt(58.8 / 3) = 4.4 ft
+
+height guess: 24"
+
+footing weight: 24 / 12* 150 = 300psf
+Net usable soil pressure: 2700psf
+
+required area = 58800 / 2700 = 21.7 = 4.6ft
+
+
+factored soil pressure: 1.2 * 33.3 + 1.6 * 25.6 = 80.92k
+
+design soil pressure: 80.92 / 4.6^2 = 3.8ksf
+
+Bending force: 
+3800 * 
+
+
+shear column footing:
+Vc = 2 * sqrt(f'c)* b*d
+
+punching shear:
+ * [
+
+shear capacity of the concrete.
+
+
+
+See Table 16.3 for bar configurations
+
+Spacings given in the table assume the first bar to be centered at 4 in. from the footing edge. Maximum spacing should be limited to 18 in. and minimum to about 6 in.
+
+minimum .0015% steel by area.
+
